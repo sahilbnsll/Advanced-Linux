@@ -1,6 +1,9 @@
 #!/bin/bash
-
-# example of using arguments to a script
-echo "My first name is $1"
-echo "My surname is $2"
-echo "Total number of arguments is $#" 
+echo "Number of arguments passed is: $#"
+echo "argument 0 is $0"
+n=1
+for i
+do 
+	echo "argument $n is $i"
+	n=$((n+1))
+done
